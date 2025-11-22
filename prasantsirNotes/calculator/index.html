@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+        }
+
+        .all{
+            width: 100%;
+            height: 100vh;
+            border: 4px solid green;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1vh;
+            
+        }
+
+        button{
+            width: 6vw;
+            height: 6vw ;
+            color: white;
+            font-size: 3vw;
+            background-color: black;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        #display{
+            width: 35%;
+            height: 2vw;
+            font-size: 4vw;
+            text-align: end;
+            padding: 3vw;
+            border-radius: 5vw;
+            border: 0.5vw solid black;
+        }
+
+        .btncont{
+            width: 40vw;
+            height: 6vw;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            
+            
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="all">
+        <input type="text" id="display" readonly>
+        <div class="btncont">
+        <button style="background-color: orange;width: 15vw;border-radius: 3vw;" onclick="currdis = '';document.querySelector('#display').value = currdis;">c</button>
+        
+        <button style="background-color: gray;" onclick="currdis = currdis + '%';document.querySelector('#display').value = currdis;">%</button>
+        <button style="background-color: gray;" onclick="currdis = currdis + '/';document.querySelector('#display').value = currdis;">/</button>
+        
+        </div>
+
+        
+
+        <div class="btncont">
+        <button onclick="currdis = currdis + '7';document.querySelector('#display').value = currdis;">7</button>
+        <button onclick="currdis = currdis + '8';document.querySelector('#display').value = currdis;">8</button>
+        <button onclick="currdis = currdis + '9';document.querySelector('#display').value = currdis;">9</button>
+        <button style="background-color: gray;" onclick="currdis = currdis + '*';document.querySelector('#display').value = currdis;">*</button>
+        </div>
+
+        <div class="btncont">
+        
+        
+        <button onclick="currdis = currdis + '4';document.querySelector('#display').value = currdis;">4</button>
+        <button onclick="currdis = currdis + '5';document.querySelector('#display').value = currdis;">5</button>
+        <button onclick="currdis = currdis + '6';document.querySelector('#display').value = currdis;">6</button>
+        <button style="background-color: gray;" onclick="currdis = currdis + '-';document.querySelector('#display').value = currdis;">-</button>
+        </div>
+
+        <div class="btncont">
+        
+        
+        
+        <button onclick="currdis = currdis + '1';document.querySelector('#display').value = currdis;">1</button>
+        <button onclick="currdis = currdis + '2';document.querySelector('#display').value = currdis;">2</button>
+        <button onclick="currdis = currdis + '3';document.querySelector('#display').value = currdis;">3</button>
+        <button style="background-color: gray;" onclick="currdis = currdis + '+';document.querySelector('#display').value = currdis;">+</button>
+        </div>
+
+        <div class="btncont">
+        <button onclick="currdis = currdis + '0';document.querySelector('#display').value = currdis;">0</button>
+        <button onclick="currdis = currdis + '.';document.querySelector('#display').value = currdis;">.</button>
+        <button style="background-color: green;width: 15vw;border-radius: 3vw;" onclick="currdis = eval(currdis);document.querySelector('#display').value = currdis;">=</button>
+        
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+var currdis = "";
+
+document.querySelector('#display').value = currdis;
+
+var couns = document.querySelector("#couns");
+
+var kamo = "25+25"
+console.log(eval(kamo))
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
