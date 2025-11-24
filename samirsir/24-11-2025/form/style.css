@@ -1,0 +1,33 @@
+.input{
+    width: 30vw;
+    height: 4vw;
+    border-radius: 4vw;
+    padding-left: 2vw;
+    font-size: 2vw;
+    font-weight: 900;
+    border: 0.4vw solid black;
+}
+
+.btn{
+    width: 15vw;
+    height: 5vw;
+    border-radius: 3vw;
+    background: linear-gradient(to left , red , orange);
+    font-size: 2vw;
+    font-weight: 900;
+    color: white;
+    cursor: pointer;
+    position: fixed;
+    /* top : 10vw; */
+    left: 35vw;
+}
+
+.btn:hover{
+    width: 15vw;
+    height: 5vw;
+    border-radius: 3vw;
+    background: linear-gradient(to left , orange , red);
+    font-size: 2vw;
+    font-weight: 900;
+    color: white;
+}

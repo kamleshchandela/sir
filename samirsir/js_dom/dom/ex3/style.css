@@ -1,0 +1,26 @@
+.btn {
+    width: 20vw;
+    height: 4vw;
+    border-radius: 2vw;
+    color: white;
+    background: linear-gradient(to left , red , yellow);
+    font-weight: 800;
+    font-size: 2vw;
+    cursor: pointer;
+    position: fixed;
+    top: 10vw;
+}
+.btn:hover {
+    width: 20vw;
+    height: 4vw;
+    border-radius: 2vw;
+    color: white;
+    background: linear-gradient(to left , yellow , red);
+    font-weight: 800;
+    font-size: 2vw;
+}
+
+
+p{
+    font-size: 3vw;
+}

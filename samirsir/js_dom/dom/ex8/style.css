@@ -1,0 +1,72 @@
+.red{
+    width: 20vw;
+    height: 4vw;
+    border-radius: 2vw;
+    font-size: 2vw;
+    font-weight: 800;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+}
+.red:hover{
+    width: 20vw;
+    height: 4vw;
+    border-radius: 2vw;
+    font-size: 2vw;
+    font-weight: 800;
+    background-color: rgb(118, 118, 118);
+    color: white;
+    cursor: pointer;
+}
+
+
+.green{
+    width: 20vw;
+    height: 4vw;
+    border-radius: 2vw;
+    font-size: 2vw;
+    font-weight: 800;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+
+}
+.green:hover{
+    width: 20vw;
+    height: 4vw;
+    border-radius: 2vw;
+    font-size: 2vw;
+    font-weight: 800;
+    background-color: white;
+    cursor: pointer;
+    background-color: rgb(118, 118, 118);
+    color: white;
+
+}
+
+
+.blue{
+    width: 20vw;
+    height: 4vw;
+    border-radius: 2vw;
+    font-size: 2vw;
+    font-weight: 800;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+}
+.blue:hover{
+    width: 20vw;
+    height: 4vw;
+    border-radius: 2vw;
+    font-size: 2vw;
+    font-weight: 800;
+    background-color: white;
+    cursor: pointer;
+    background-color: rgb(118, 118, 118);
+    color: white;
+
+}
