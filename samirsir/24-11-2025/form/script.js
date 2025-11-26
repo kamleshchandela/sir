@@ -1,9 +1,7 @@
 var btn = document.querySelector(".btn");
 var input = document.querySelector(".input");
 
-
-
-
+// best method last ma chhe
 
 // console.log(arr[0]);
 
@@ -45,6 +43,36 @@ for(let i = 0;i<arr.length ; i++){
 })
 
 
+
+
+
+
+
+
+
+
+
+// best method
+
+// var str = "kamlesh@gmail.com";
+
+// var num =  str.split("@");
+
+// console.log(num);
+
+
+// if(num[1]=="gmail.com"  && num[2] == undefined){
+//     console.log("true"
+//         )
+        
+    
+// }
+// else{
+//     console.log("false"
+//         )
+        
+    
+// }
 
 
 
