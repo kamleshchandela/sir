@@ -1,3 +1,6 @@
+
+// method 1
+
 var str = "kmemkmkikmkokmkmumkAKMEKMKMIKMKOKMKMU";
 var arr1 = str.split("");
 // console.log(arr1.length);
@@ -15,3 +18,29 @@ while(i >= 0){
     
     i++;
 }
+
+
+// method 2
+
+
+let str="kamlesh";
+
+let str2="aeiouAEIOU"
+var count = 0;
+for(let i=0;i<str.length; i++){
+if(str2.includes(str[i])){
+count++;
+}
+}
+
+console.log(count);
+
+
+
+
+
+
+
+
+
+

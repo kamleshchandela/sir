@@ -23,6 +23,19 @@ var str = "kamlesh";
 console.log(str.length);
 
 
+// method 3
+
+var str = "kamlesh";
+
+var count = 0;
+while(str[count]){
+    
+    count++;
+   
+}
+
+console.log(count);
+
 
 
 

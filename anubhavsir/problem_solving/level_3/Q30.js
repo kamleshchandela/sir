@@ -3,10 +3,12 @@
 // 3 => 3, 6, 9, 12, 15, 18, 21 ......
 // 9 => 9, 18, 27, 36, 45, 54, 63 ......
 
+// range last me 3 * 9 tak jaegi ( sab ke liye )
+
 // first same is 9 LCM => 9
 
 
-
+// method 1
 
 var a = 3;
 var b = 9;
@@ -35,6 +37,21 @@ for(let i = 0 ; i<arr1.length ; i++){
         }
     } 
 }
+
+
+// method 2
+
+var num1 = 10;
+var num2 = 15;
+
+for(let i = Math.max(num1 , num2); i <= num1 * num2 ; i++){
+    if(i % num1 == 0 && i % num2 == 0 ){
+        console.log(`LCM of ${num1} and ${num2} is : ${i}`);
+        break;
+    }
+}
+
+
 
 
 
