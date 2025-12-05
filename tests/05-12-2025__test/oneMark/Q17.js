@@ -1,0 +1,1 @@
+console.log(3 + "true");   // 3true
