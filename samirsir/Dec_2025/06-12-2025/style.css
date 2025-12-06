@@ -1,0 +1,33 @@
+.all{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vw;
+    margin-top: 5vw;
+    margin-left: 2vw;
+}
+
+.class{
+    width: 25vw;
+    height: 28vw;
+    border: 2px solid black;
+    padding: 2vw;
+    font-size: 1.2vw;
+    border-radius: 2vw;
+    
+    transition: all 0.4s ease-in-out;
+    
+}
+.class:hover{
+    width: 25vw;
+    height: 28vw;
+    border: 2px solid black;
+    padding: 2vw;
+    font-size: 1.2vw;
+    border-radius: 2vw;
+    box-shadow: 1px 10px 25px;
+    transform: scale(1.05);
+
+}
+
