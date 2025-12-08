@@ -31,3 +31,15 @@
 
 }
 
+.btn{
+    width: 15vw;
+    height: 8vw;
+    border-radius: 3vw;
+    background: linear-gradient( to right , blue , pink);
+}
+.btn:hover{
+    width: 15vw;
+    height: 8vw;
+    border-radius: 3vw;
+    background: linear-gradient( to right , pink , blue);
+}
