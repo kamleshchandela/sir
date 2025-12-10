@@ -10,11 +10,15 @@ for ( let i = 0 ; i < arr.length ; i++ ){
     
 }
 
-    console.log( "min is :" , min);
+// method 1
+console.log( "min is :" , min);
 
+// method 2
+console.log("min is :" , Math.min(...arr));
 
-
-
+// method 3 
+arr = arr.sort((a,b) => a - b);
+console.log("min is :" , arr[0]);
 
 
 

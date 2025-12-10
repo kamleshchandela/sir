@@ -14,6 +14,9 @@ for(let i = 0 ; i < str.length ; i++){
 
 console.log(str1);
 
+
+
+
 // method 2
 
 var str2 = "aeiouAEIOU";

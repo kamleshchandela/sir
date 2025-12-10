@@ -8,9 +8,16 @@ for ( let i = 0 ; i < arr.length ; i++ ){
     
 }
 
+// method 1
 console.log( "max is :" , max);
 
 
+// method 2
+console.log("max is :" , Math.max(...arr));
+
+// method 3 
+arr = arr.sort((a,b) => b - a);
+console.log("max is :" , arr[0]);
 
 
 

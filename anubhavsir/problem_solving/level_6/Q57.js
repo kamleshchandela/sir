@@ -10,7 +10,7 @@ for ( let i = 0 ; i < arr.length ; i++ ){
     
 }
 
-    console.log( "positive  No. in arr is :" , count);
+    console.log("positive  No. in arr is :" , count);
 
 
 
