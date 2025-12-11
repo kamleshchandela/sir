@@ -1,3 +1,6 @@
+
+// method 1
+
 var arr = [10, 5, 8, 20, 18 , 22 , 6 ];
 var arr1 = [];
 var max1 = -Infinity;   // negative value ke liye jo -Infinity se to badihi hogi
@@ -36,9 +39,46 @@ console.log(max2);
 
 
 
+// method 2
+
+var max=-Infinity;
+var smax=-Infinity;
+
+for(let i=0;i<arr.length; i++){
+if(arr[i]>max){
+max=arr[i];
+}
+}
+
+
+for(let i=0;i<arr.length; i++){
+if(arr[i]>smax && arr[i]<max){
+smax=arr[i];
+}
+}
+
+console.log(smax);
 
 
 
+// method 3
 
+var max = -Infinity;
+var smax = -Infinity;
 
+for(let i=0;i<arr.length;i++){
+if(arr[i]>max){
+
+smax=max;
+
+max=arr[i];
+}
+
+else if(arr[i]>smax && arr[i]<max){
+smax=arr[i];
+}
+
+}
+
+console.log(smax)
 

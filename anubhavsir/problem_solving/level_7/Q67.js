@@ -9,6 +9,38 @@ for ( let i = 0 ; i < arr.length ; i++ ){
     }
     
 }
+console.log(count);
 
+
+
+
+
+// method 2
+count = 0;
+var obj = {
+    a : "4"
+}
+
+for(let i = 0; i < arr.length ; i++ ){
+    if(arr[i] == obj.a){
+        count++;
+        
+    }
+}
+console.log(count);
+
+
+// method 3
+count = 0;
+arr.forEach((e)=>{
+    if(e == obj.a){
+        count++;
+        
+    }
+})
 
 console.log(count);
+
+
+
+
