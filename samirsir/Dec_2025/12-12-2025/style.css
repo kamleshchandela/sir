@@ -1,0 +1,209 @@
+/* ===== BODY & GLOBAL ===== */
+body {
+    margin: 0;
+    padding: 0;
+    background: #121212;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* ===== SEARCH INPUT & BUTTON ===== */
+.search {
+    width: 60vw;
+    max-width: 500px;
+    padding: 1vh 2vw;
+    margin: 2vh 0;
+    border-radius: 1vw;
+    border: none;
+    font-size: 2vh;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.search:focus {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 1vw #00ffff;
+}
+
+.btn {
+    padding: 1vh 2vw;
+    margin-bottom: 2vh;
+    border-radius: 1vw;
+    border: none;
+    font-size: 2vh;
+    font-weight: bold;
+    background: linear-gradient(45deg, #00f, #0ff);
+    color: #000;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #0ff, #00f);
+}
+
+/* ===== ALL CARDS CONTAINER ===== */
+.all {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vw;
+}
+
+/* ===== CARD WRAPPER ===== */
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(1vw);
+    border-radius: 1vw;
+    padding: 2vh 2vw;
+    margin: 2vh 1vw;
+    max-width: 45vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 2vw rgba(0, 255, 255, 0.5);
+}
+
+/* ===== CARD CONTENT ===== */
+.name {
+    font-size: 2.5vh;
+    font-weight: bold;
+    margin-bottom: 1vh;
+    text-align: center;
+}
+
+.para {
+    font-size: 2vh;
+    line-height: 1.5;
+    text-align: justify;
+    padding: 1vh 1vw;
+}
+
+.img {
+    width: 60%; /* image bigger */
+    height: 90vh; /* taller */
+    object-fit: cover;
+    border-radius: 1vw;
+    box-shadow: 0 0 2vw rgba(0, 255, 255, 0.3);
+    transition: 0.3s ease;
+}
+
+.img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 3vw rgba(0, 255, 255, 0.6);
+}
+
+.anker {
+    display: inline-block;
+    margin-top: 1vh;
+    padding: 1vh 3vw; /* button adjusts according to text */
+    border-radius: 1vw;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2vh;
+    color: #000;
+    background: linear-gradient(135deg, #0ff, #00f);
+    transition: 0.3s ease;
+}
+
+.anker:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #00f, #0ff);
+}
+
+/* ===== RESPONSIVE ===== */
+@media screen and (max-width: 768px) {
+    .img {
+        width: 80vw;
+        height: 30vh;
+    }
+    .card {
+        max-width: 90vw;
+        padding: 2vh 1vw;
+    }
+    .search {
+        width: 80vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Loader styles */
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 47%;
+    border: 0.8vh solid rgba(255, 255, 255, 0.2);
+    border-top: 0.8vh solid #0ff;
+    border-radius: 50%;
+    width: 8vh;
+    height: 8vh;
+    animation: spin 1s ease-in-out infinite;
+    z-index: 1000;
+}
+
+/* Spin animation */
+@keyframes spin {
+    0% { transform:  rotate(0deg); }
+    100% { transform:  rotate(360deg); }
+}
+
+/* Hide loader class */
+.loader.hidden {
+    display: none;
+}
+
+
+@media screen and (max-width : 900px )  {
+    .loader{
+        left: 40%;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
