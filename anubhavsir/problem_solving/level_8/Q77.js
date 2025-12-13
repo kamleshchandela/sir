@@ -1,4 +1,6 @@
 
+// method 1
+
 var arr = [ 1 , 2 , 3 , 4 , 5 , 6 , 7 ];
 var count = 0 ;
 var sum = 0 ;
@@ -23,4 +25,12 @@ console.log("Elements Greater than Average is :" , count)
 
 
 
+// method 2
 
+let num = 0 ;
+arr.forEach((value)=>{
+    value > avr ? num++ : "";
+
+})
+
+console.log("Elements Greater than Average is :" , num)

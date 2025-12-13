@@ -1,3 +1,7 @@
+
+// method 1 felter vala
+
+
 var arr = [1, 2, 3, 4, 5];
 var arr1 = [];
 var arr2 = [];
@@ -16,10 +20,12 @@ console.log("only even :" , arr1)
 console.log("only odd :" , arr2)
 
 
+// method 2 felter vala
+var arr4 = arr.filter((e)=>{
+    return e % 2 == 0 ;
+})
 
-
-
-
+console.log(arr4)
 
 
 

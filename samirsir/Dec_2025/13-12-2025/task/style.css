@@ -1,0 +1,80 @@
+/* Main Container */
+.all {
+  width: 90%;
+  margin: 5vh auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Review Card */
+.div {
+  flex: 1 1 300px;   /* responsive cards */
+  max-width: 60vw;
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 0.2vw solid ;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.35s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hover Effect */
+.div:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Title */
+h3 {
+  font-size: 1.1rem;
+  color: #222;
+  margin-bottom: 0.8rem;
+}
+
+/* Avatar */
+.img {
+  width: 20vw;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.6rem;
+}
+
+/* Review ID */
+.id {
+  font-size: 0.7rem;
+  color: #777;
+  margin-bottom: 0.6rem;
+}
+
+/* Comment */
+.comment {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #444;
+  flex-grow: 1;
+}
+
+/* Rating */
+.ret {
+  margin-top: 1rem;
+  align-self: flex-start;
+  background: #ff9900;
+  color: #fff;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+/* Rating Hover */
+.div:hover .ret {
+  transform: scale(1.15);
+}
