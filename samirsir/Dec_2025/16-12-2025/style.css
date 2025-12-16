@@ -1,0 +1,81 @@
+body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    box-sizing: border-box;
+}
+
+#input{
+    width: 25vw;
+    height: 4vw ;
+    font-size: 1.5vw;
+    font-weight: 700;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border-radius: 2vw;
+    border: 0.2vw solid orange;
+}
+
+.all{
+    width: 30vw;
+    max-height: 70vw ;
+    border: 0.2vw solid;
+    border-radius: 2vw;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.para{
+    width: 70%;
+}
+
+.delete{
+    background-color: red;
+    width: 3vw;
+    height: 3vw;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: 800;
+    color: white;
+    transition: all 0.4s ease-in-out;
+}
+.delete:hover{
+    background-color: black;
+    width: 3vw;
+    height: 3vw;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: 800;
+    color: white;
+}
+
+.para{
+    font-size: 1.5vw;
+}
+
+
+
+
+
+
+
+
+
+
+

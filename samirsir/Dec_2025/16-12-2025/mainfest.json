@@ -1,6 +1,11 @@
 {
-    "name" : "First Extantion" ,
-    "version" : "0.01" ,
-    "description" : "first time make extantion" ,
-    "manifast_version" : 3
+    "name" : "TODO LIST" ,
+    "version" : "1.0.0" ,
+    "description" : "My Todo List" ,
+    "manifast_version" : 3 ,
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "img.png"
+    }
+
 }
