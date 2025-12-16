@@ -1,8 +1,7 @@
-var str = "kamlesh";
 
-check();
+check("kamlesh");
 
-function check () {
+function check (str) {
     console.log(str[0]);
 }
 

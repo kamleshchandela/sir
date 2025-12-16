@@ -16,4 +16,21 @@ console.log(count)
 console.log(str.length)
 
 
+// Q ka ans yaha he
+function length (e) {
+    if(e.length > 5){
+        console.log(true);
+
+    }
+    else{
+        console.log(false);
+
+    }
+}
+
+length("kamlesh")
+
+
+
+
 
