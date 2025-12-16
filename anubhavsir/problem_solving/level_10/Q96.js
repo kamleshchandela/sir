@@ -1,13 +1,26 @@
-function averageMarks(marks) {
-  const values = Object.values(marks);
 
-  if (values.length === 0) return 0;
-
-  const sum = values.reduce((total, mark) => total + mark, 0);
-  return sum / values.length;
+var obj = {math: 80, science: 90, english: 70} ;
+var sum = 0 ;
+var count = 0;
+for (let i in obj){
+    sum = sum + obj[i] ;
+    count ++ ;
 }
 
-// Test cases
-console.log(averageMarks({ math: 80, science: 90, english: 70 })); // 80
-console.log(averageMarks({ only: 100 }));                          // 100
-console.log(averageMarks({}));                                     // 0
+console.log(sum)
+
+console.log("average is" , sum / count );
+
+
+
+if( (sum / count) == undefined ){
+    console.log("students marks are not added")
+}
+
+
+// jab obj = {} hoga tan (sum / count) ka ans NaN aaye ga par hame if consdition me to (sum / count)==undefined karke check karva na pade ga
+
+
+
+
+

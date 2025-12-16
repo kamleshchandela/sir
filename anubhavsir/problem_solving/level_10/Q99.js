@@ -1,13 +1,13 @@
 
 
 var obj = {a: 1, b: 2, c: 3} ;
-var arr = [] ;
+var count = 0 ;
 
 for (let i in obj){
-    arr.push(i)
+    count++;
 }
 
-console.log(arr)
+console.log(count) ;
 
 
 

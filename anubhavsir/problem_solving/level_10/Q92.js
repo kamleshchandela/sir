@@ -1,21 +1,31 @@
-function mostFrequent(arr) {
-  let freq = {};
-  let maxCount = 0;
-  let mostFreqNum = arr[0];
 
-  for (let num of arr) {
-    freq[num] = (freq[num] || 0) + 1;
+var arr = [4, 4, 1, 1, 4] ;
+var obj = {};
 
-    if (freq[num] > maxCount) {
-      maxCount = freq[num];
-      mostFreqNum = num;
+for (let i = 0 ; i < arr.length ; i++){
+    if(obj[arr[i]] == undefined){
+        obj[arr[i]] = 1;
     }
-  }
-
-  return mostFreqNum;
+    else{
+        obj[arr[i]]++ ;
+    }
 }
 
-// Test cases
-console.log(mostFrequent([1, 2, 2, 3]));      // 2
-console.log(mostFrequent([4, 4, 1, 1, 4]));   // 4
-console.log(mostFrequent([7]));               // 7
+var max = -Infinity;
+
+for (let i in obj){
+    if (i > max){
+        max = i ;
+    }
+    
+}
+
+// console.log()
+
+console.log(max , "is" , obj[max] , "times")
+
+
+
+
+
+

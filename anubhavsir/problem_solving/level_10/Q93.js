@@ -1,14 +1,29 @@
-function characterFrequency(str) {
-  let result = {};
 
-  for (let char of str) {
-    result[char] = (result[char] || 0) + 1;
-  }
+var arr = "kamleshkamkamlesh" ;
+var obj = {} ;
 
-  return result;
+for ( let i = 0 ; i < arr.length ; i++ ){
+    if(obj[arr[i]] == undefined ){
+        obj[arr[i]] = 1;
+    }
+    else{
+        obj[arr[i]]++;
+    }
 }
 
+console.log(obj)
 
-console.log(characterFrequency("aab"));    
-console.log(characterFrequency("hello"));  
-console.log(characterFrequency(""));       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
