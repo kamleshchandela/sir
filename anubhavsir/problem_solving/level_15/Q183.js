@@ -21,9 +21,6 @@
 
 // }
 
-
-
-
 // console.log(arr1) ;
 
 
