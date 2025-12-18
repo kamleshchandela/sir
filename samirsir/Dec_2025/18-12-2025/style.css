@@ -1,0 +1,119 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+.nav{
+    width: 100%;
+    height: 6vw;
+    display: flex;
+    gap: 65vw;
+    padding-left: 2vw;
+    align-items: center;
+    border: 0.2vw solid;
+}
+
+
+.logo{
+    width: 10vw;
+    height: 5vw;
+    border: 0.2vw solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+    font-weight: 900;
+    color: brown;
+}
+
+.data{
+    width: 12vw;
+    height: 5vw;
+    border: 0.2vw solid;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 2vw;
+    font-weight: 900;
+    color: green;
+}
+
+.name{
+    background-color: black;
+    color: aliceblue;
+    border-radius: 2vw;
+    width: 10vw;
+    height: 3vw;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.5vw;
+    justify-content: center;
+    align-items: center;
+}
+
+#n1{
+    position: absolute;
+    transform: rotateX(50deg);
+    transition: all 0.8s ease-in-out;
+}
+#n2{
+    position: absolute;
+    transition: all 0.8s ease-in-out;
+
+}
+#n3{
+    position: absolute;
+    transition: all 0.8s ease-in-out;
+
+}
+#n4{
+    position: absolute;
+    height: 4vw;
+    width: 11vw;
+    justify-content: center;
+    gap: 0.5vw;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center ;
+    background-color: aqua;
+    color: black;
+    transition: all 0.8s ease-in-out;
+
+}
+
+.line{
+    width: 3vw;
+    height: 0.3vw;
+    position: auto;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+
+
+
+
+
+
+
+@media screen and (max-width : 900px) {
+    .nav{
+        height: 13vw;
+        gap: 25vw;
+    }
+    .logo{
+        height: 10vw;
+        width: 20vw;
+        font-size: 6vw;
+    }
+    .data{
+        width: 50vw;
+        height: 10vw;
+        font-size: 4vw;
+    }
+}
+
+
