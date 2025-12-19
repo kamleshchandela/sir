@@ -18,6 +18,18 @@ console.log(str1)
 
 
 
+// method 2 
+var str = "kamleshabababa?" ;
+console.log(str.replaceAll("?" , "!"));
+
+
+// replace and replaceAll
+var str = "kamleshabababa" ;
+console.log(str.replaceAll("a" , "z"));
+
+var str = "kamleshabababa" ;
+console.log(str.replace("a" , "z"));
+// replace("a" , "z") me first "a" hi "z" me converd hoga baki esehi rahe ge ; 
 
 
 
