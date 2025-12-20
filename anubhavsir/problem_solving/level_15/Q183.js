@@ -1,6 +1,6 @@
 var arr = [1, 2, 3, 4, 5] ;
 var arr1 = arr ;
-var k = 2 ;
+var k = 3 ;
 
 for(let w = 0 ; w < k ; w ++){
 

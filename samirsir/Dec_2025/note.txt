@@ -1,0 +1,93 @@
+// last lecture -> css(responsive)-> 1. Flex box
+// 2. Media queries -> Range(concern:width(size differ)) -> total targeted devices -> (Laptop/Desktop, Tablet, Mobile)
+//  Laptop/Desktop -> <=900px  Tablet -> 481px>= and <=768px  Mobile -> <=480px
+// synatx: @media screen and (min-width: numner(px,%.fr)) and (max-width: number){
+// css property}
+// Orientation -> 1. Landscape(width > height)  2. potrait(Height > width)
+// 3. Grid -> 1. Flex (1-Dimensional)-> (Column or Row) vs Grid (2-dimemnsional) -> (Column and Row)
+// row -> Height  and Column -> width....
+// property -> 1. grid-template-columns/rows: number columns/rows but in (px / % / fr) -> template(struture/ outline/ Layout)
+// 2. Flexible -> gap: row column(2-Dimensional)  3. Function -> repeat(number how many times to repeat, size)-> rows/columns
+//  Function -> minmax(min size, max size(px, %, fr, auto)) -> rows/ columns
+// layout -> 1. Laptop/Desktop(Layout)-> grid-column-start and grid-row-start,  grid-column-end and grid-row-end...
+//  short-handed -> grid-column: start_number / end_number or grid-row: start_number / end_number
+// Layout -> Tablet and Mobile -> Fixed row -> size(height) -> remaining rows automatically -> extra rows(?) -> 
+//  grid-auto-rows: size  -> one time declaration  and then automatically css will be responsioble for adding the user given height size.
+
+
+
+
+// JavaScript -> Topics(Dom)
+// LifeCycle -> Entire website process.....
+//  1. HTML FILE -> . html file load then it will process the entire file -> browser  will reflect the content + Browser(js Compiler) -> DOM
+// DOM -> Document(HTML Elements), Object(JS), Model(process)
+// 2. CSS, IMAGES, IFRAME  -> Content -> attractive(user attract)
+// 3. Js finally load and then execute.
+
+//  Html file -> css link (head tag), -> js link ( before body ending tag)
+
+// DOM manipulation -> Dynamically content update/manipulate -> reflect on browser...
+
+// 1. Element Access -> -> documnet.querySelector(element/ classname, idname) -> string
+//  -> documnet.querySelectorAll() -> Array..
+//  -> documnet.getElementByClassName()->string   -> documnet.getElemnetById()->string
+
+// 2. Content -> element (h1/p)-> element.textContent()string -> message/ innerText string -> msg/ innerHTML -> string msg + element
+                //  element(input) -> element.value
+
+// 3. Apperance(styling) -> element.style.css_property(css:background-url -> js: backgroundUrl)= Propert_value(string)
+                    //    -> css property -> store in object  -> Object.assign(elemnt_name.style, object_name)
+                    //  -> elemnt_name.style.object_name[key] = object_name[key]
+                    // -> element_name.style + "." + key + "=" + object_nasme[key]
+
+// 4. Condititon based action(event) -> 1. event -> action -> performed by user -> listen backend
+                                    //  2. event(action)-> situation(action differ)
+                                    // synatx -> elemnt_name.addEventListner(action, task)
+                                    //  Task -> arrow function/ function without function name/ function call
+                                    //  small task(code redability increase) -> starting 2 function
+                                    // code(task)-> complex-> huge number of intsruction -> last one function call
+
+                                //   3. Action -> click(single click), dblclick, mouseenter, mouseleave, mousehover
+                                            //    input, keypress,wheel(delta.X)-> graph, mousemoveO(clientX and clientY)
+                                            //  change(checkbox/radiobox/select -> checked ->T/F), DOMContentLoaded, load(window) 
+
+//  5. Storage -> 1. Local -> data store-> permanent, data type -> object
+                //   2. session -> data store -> current tab(active), data type -> object
+                //  -> create -> setItem(key, value), read-> getItm(key), remove -> removeItem(key), clear()
+
+                //  3. Cookies -> data store
+//  3. Cookies -> data store -> (without using any expiry -> entire browser(active))
+                            //               -> (use expiry -> data hold)
+                            // synatx -> document.cookie = "key=value; expires=Thu, 12 Dec 2025 12:00:00 UTC; Path=/";
+                            // create, read, delete, update-> document.cookie
+                            //  read -> return -> number of key and value nothing else (string)
+
+// 6. Method(transformation) -> String -> Array (split(), split(""))
+
+// 7. Methods -> 1. Random()-> range: 0 to 0.9  -> manually range increase -> Math.random() * max_range+1
+                            //  number return -> decimal format -> Math.floor()
+
+// 8. Loop -> 1. while(conditon){}, do{}while(condition), for(){}, forEach, for(of)-> return value of current array index, for(in)-> return current index of that array
+
+
+// 9. Object(travelling) -> for(in)-> array(index) and in object(key)
+                        // -> entire keys -> Object.keys(obj_name);
+                       // -> entire values -> Object.values(obj_name);
+                       
+                       
+// 10. Array method -> 1. map -> entire elemnet store in array -> same operation -> result store in new array.., array size = original array size
+                      //2. filter -> refinement(condition)-> new array size -> differ/vary(maybe-> size = original array(element fullfill entire condition), empty size, x(size))
+                      //3. reduce -> return -> result one single value format, reduce((prv, curr))
+                      
+                      
+// 11. API -> Application Programming Interface..
+            //  fetch("url_link")
+            // .then((response)=> response.json())
+            // .then((data)=>{data -> task -> show})
+            // .catch(error)=>{// error code}
+            //.finally{}
+
+
+// 12. Error handling -> try{// set of interuction -> error chances (user defined) -> condition-> throw "msg"}catch(error){ set of instruction}finally{// remaining code }
+
+//13. Chrome Extension -> manifest.json(entire flow -> work structure)-> name, version, manifest_version(html -> utf-8)->3, description, action(object-> default_icon, default_popup: file_name.html)  width*height -> 800*600

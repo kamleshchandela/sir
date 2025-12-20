@@ -57,6 +57,10 @@
     /* background-color: black; */
     grid-area: a10;
 }
+.box10{
+    /* background-color: black; */
+    grid-area: a10;
+}
 
 
 .container{
@@ -68,6 +72,7 @@
     padding: 4vw 0;
     grid-template-rows: repeat(6 , 15vw) ;
     grid-template-columns: repeat(4 , 20vw) ;
+    grid-auto-rows : 15vw ;
     align-items: center;
     justify-items: center;
     justify-content: center; 
@@ -165,6 +170,10 @@
             'a8 a9'
             'a10 a10'
             'a10 a10'
+            'a11 a11'
+            'a11 a11'
+            'a12 a12'
+            'a12 a12'
             
             
             
