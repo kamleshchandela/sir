@@ -1,4 +1,4 @@
-
+// method 1 (isse method 2 aasan he)
 // saro Q chhe practice kira jevo
 
 var str = "The quick brown fox Jumps over a lazy dog" ;
@@ -38,3 +38,25 @@ if(count == 1 ){
 
 
 
+
+
+
+
+
+// method 2 (small method ye aasan he)
+var str1 = str.split(" ").join("").toLocaleLowerCase() ;
+console.log(str1) ;
+var k = 0 ;
+
+str2.split("").forEach((e)=>{
+    
+    if(!str1.includes(e) && k == 0) {
+        console.log(false) ;
+        k = 1 ;
+        
+    }
+})
+
+if(k==0){
+    console.log(true) ;
+}
