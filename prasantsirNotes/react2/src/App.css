@@ -1,0 +1,52 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2vw ;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  border: 2px solid red;
+}
+
+.slogan{
+  font-size: 2vw ;
+  
+}
+
+.heading{
+  font-size: 3vw;
+  font-weight: 900;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

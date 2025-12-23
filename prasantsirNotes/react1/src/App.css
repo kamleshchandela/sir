@@ -1,0 +1,98 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.todo-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid red;
+  width: 100%;
+  gap: 3vw;
+  padding-top: 3vw ;
+  height: auto;
+}
+
+.hading{
+  font-size: 2.5vw;
+  font-weight: 800;
+}
+
+.data{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid red;
+  width: 100%;
+  gap: 1vw;
+  height: auto;
+}
+
+.data1{
+
+  width: 100%;
+  height: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  border: 2px solid red;
+
+}
+
+.input , .date{
+  width: 20vw;
+  height: 4vw;
+  font-size: 1.5vw;
+  padding: 0.5vw;
+  border: 0.2vw solid black;
+  font-weight: 700 ;
+  border-radius: 1vw;
+}
+
+.green-btn{
+  width: 20vw;
+  height: 4vw;
+  font-size: 1.5vw;
+  border: 0.2vw solid green;
+  font-weight: 700 ;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  border-radius: 1vw;
+}
+
+.data11{
+  width: 20vw;
+  height: 4vw;
+  font-size: 1.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.2vw solid black;
+  font-weight: 700 ;
+  border-radius: 0.5vw;
+}
+
+.red-btn{
+  width: 20vw;
+  height: 4vw;
+  font-size: 1.5vw;
+  border: 0.2vw solid green;
+  font-weight: 700 ;
+  background-color: rgb(240, 2, 2);
+  color: white;
+  cursor: pointer;
+  border-radius: 1vw;
+}
+
+
+
+
+
