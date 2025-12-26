@@ -7,22 +7,22 @@ import sub from './sub'
 
 
 
-var a = prompt();
-var b = prompt();
-var c = prompt();
+// var a = prompt();
+// var b = prompt();
+// var c = prompt();
 
-if(c == "+"){
-  console.log(sum(a,b))
-}
-else if(c == "-"){
-  console.log(sub(a,b))
-}
-else if(c == "/"){
-  console.log(div(a,b))
-}
-else if(c == "*"){
-  console.log(mul(a,b))
-}
+// if(c == "+"){
+//   console.log(sum(a,b))
+// }
+// else if(c == "-"){
+//   console.log(sub(a,b))
+// }
+// else if(c == "/"){
+//   console.log(div(a,b))
+// }
+// else if(c == "*"){
+//   console.log(mul(a,b))
+// }
 
 
 

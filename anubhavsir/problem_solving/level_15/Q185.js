@@ -17,6 +17,8 @@ while(k < arr1.length + arr2.length){
             j++ ;
         }
     }
+
+
     else{
         if(arr2[i] <= arr1[j]){
             ans.push(arr2[i]) ;
@@ -40,5 +42,5 @@ while(k < arr1.length + arr2.length){
 console.log(ans) ;
 
 
-
+console.log(arr1[7]<2)
 

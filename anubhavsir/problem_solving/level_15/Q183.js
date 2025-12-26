@@ -1,9 +1,14 @@
 
 
-var arr = [1, 2, 3, 4, 5] ;
-var arr1 = arr ;
-var k = 3 ;
 
+var arr1 = [1, 2, 3, 4, 5] ;
+var k = 8 ;
+
+if(k>arr1.length){
+    k = k % arr1.length ;
+    console.log(k)
+}
+ 
 for(let w = 0 ; w < k ; w ++){
 
     arr1 = arr1.map((e , i)=>{

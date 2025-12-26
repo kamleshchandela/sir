@@ -1,5 +1,5 @@
 var arr = [1, 2, 3, 4, 5] ;
-var arr1 = arr ;
+var arr1 = [1, 2, 3, 4, 5] ;
 var k = 2 ;
 
 for(let w = 0 ; w < k ; w ++){
