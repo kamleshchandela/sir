@@ -1,11 +1,11 @@
-function TodoItems () {
+function TodoItems ({todoName , todoData}) {
     return (
         <div className="data1">
           <p className='data11'>
-            kamlesh
+            {todoName}
           </p>
           <p className='data11'>
-            kamlesh
+            {todoData}
           </p>
           <button className="red-btn">DELETE</button>
         </div>
