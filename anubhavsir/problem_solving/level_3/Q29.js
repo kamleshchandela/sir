@@ -45,12 +45,14 @@ for(let i = 1; i <= b;i++){
 
 // console.log(arr2);
 
-
+var ans ;
 for(let i = 0; i < arr1.length; i++){
     for(let j = 0;j< arr2.length; j++){
         if(arr1[i] == arr2[j]){
             // console.log(arr1[i]);
             arr3.push(arr1[i]);
+            console.log(arr3)
+            ans = arr1[i] 
         }
     }
 }
@@ -58,6 +60,7 @@ for(let i = 0; i < arr1.length; i++){
 // console.log(arr3);
 
 console.log(`GCD of Two Numbers ${a} ${b} is => ${arr3[arr3.length - 1]}`);
+console.log(ans) ;
 
 
 

@@ -16,7 +16,7 @@ var arr1 = [];
 var arr2 = [];
 var count = true;
 var i = 1;
-while(i < 10000){
+while(i < a * b){
     arr1.push( a * i );
     arr2.push( b * i );
     i++;
