@@ -22,6 +22,7 @@ var str = "" ;
 
 
         
+      
   
   if(a.value != "" && b.value != ""){
 
