@@ -30,14 +30,16 @@ function App() {
 
 
 
-    {Nav()}
+    
 
 
     <BrowserRouter>
+      {Nav()}
       <Routes>
         <Route path='card' element = {<Gallery />}></Route>
         <Route path='/card1' element = {<Calculater />}></Route>
         <Route path='/card3' element = {<Dono />}></Route>
+        <Route path='/card4' element = {[<Calculater /> , <Gallery /> , <Calculater />]}></Route>
 
         
       </Routes>
