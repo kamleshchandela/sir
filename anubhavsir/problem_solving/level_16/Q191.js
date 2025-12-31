@@ -8,14 +8,12 @@ var k = arr.length - 1;
 var j = Math.floor((i + k ) / 2)
 while (j > i) {
     if (arr[j] < l) {
-        i = j;
-        k = arr.length - 1;
+        i = j + 1;
         j = Math.floor((i + k) / 2);
 
     }
     else {
-        i = 0;
-        k = j;
+        k = j - 1;
         j = Math.floor((i + k) / 2)
     }
     if (arr[j] == l) {
