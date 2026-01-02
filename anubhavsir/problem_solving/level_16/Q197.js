@@ -1,20 +1,20 @@
 var str = "swiss" ;
-var count ;
-var num = 0 ;
-
-str.forEach((e)=>{
-    count = 0 ;
-    arr.forEach((j)=>{
-        if(e == j){
-            count++;
-            if(num==0 && count == 2){
-                num = 1 ;
-                
-            }
+var ans = true ;
+for(let i = 0 ; i < str.length ; i++){
+    ans = true ;
+    for(let j = 0 ; j < str.length ; j++){
+        if(i == j){
+            continue ;
         }
-    })
-})
-
-
+        else if (str[i] == str[j]) {
+            ans = false ;
+            break ;
+        }
+    }
+    if(ans){
+        console.log(str[i]);
+        break ;
+    }
+}
 
 

@@ -1,8 +1,8 @@
 
-var arr = [1, 2, 2, 3, 3, 3] ;
+var arr = [1, 1, 2, 2, 2, 3, 1, 1] ;
 
 
-var arr1 = arr.sort().filter((e , i)=>{
+var arr1 = arr.filter((e , i)=>{
     return e != arr[i - 1] ;
 })
 
