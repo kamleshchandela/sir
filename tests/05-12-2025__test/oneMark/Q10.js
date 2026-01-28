@@ -1,6 +1,0 @@
-
-
-// var is function-scoped
-
-
-
