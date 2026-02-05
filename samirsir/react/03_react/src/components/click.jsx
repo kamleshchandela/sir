@@ -3,7 +3,7 @@ import { useState } from "react";
 import Change from "./change.jsx"
 
 
-function click (){
+function click (propes){
     
     
         var num ;
@@ -26,7 +26,7 @@ function click (){
         <p>count : {count} </p>
         <button onClick={badal}>click</button>
         <Change count1 = {count}/>
-
+        <button onClick={propes.color}>color</button>
 
         </>
     )
