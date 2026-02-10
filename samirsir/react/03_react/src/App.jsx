@@ -78,6 +78,15 @@ function App() {
       setcolor(true);
     }
   }
+
+  function ok (e) {
+    // console.log(e.target.value);
+    arr.filter((a)=>{
+      (e.target.value == a)
+      
+    })
+  }
+
   return (
     <>
       
@@ -123,6 +132,17 @@ function App() {
 
 
       <div style={{backgroundColor : color1?"red":"black"}}>color</div>
+
+
+      
+
+
+      <input onChange={ok} type="text" />
+      {
+        arr.map((e)=>{
+          return (<div>{e}</div>)
+        })
+      }
       
 
 
