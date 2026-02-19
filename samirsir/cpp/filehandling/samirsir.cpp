@@ -6,6 +6,7 @@
 using namespace std ;
 
 int main () {
+    
     // string one ;
     // ifstream file ;
     // file.open("simple.txt");
