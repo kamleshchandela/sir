@@ -14,7 +14,7 @@ mongoose.connect("mongodb://localhost:27017/codinggita")
 .catch(()=>console.log("colaction is not find"))
 
 const userSchema = new mongoose.Schema({}) ;  // 
-const user = mongoose.model("jobs" , userSchema) ;
+const user = mongoose.model("jobs" , userSchema) ; 
 
 
 app.get("/user", async (req, res) => {
