@@ -11,7 +11,7 @@ function App() {
   return (
     <> 
       <div className="w-[100%] h-[50vw] border-[0.2vw] border-red-600 hover:{add()}"></div>
-      <div style={{}} className='bg-red-200 w-[50px] h-96 border-2 border-indigo-600 hover:bg-black'></div>
+      <div style={{width:"20vw"}} className='bg-red-200 w-[50px] h-96 border-2 border-indigo-600 hover:bg-black'></div>
     </>
   )
 }
