@@ -78,7 +78,7 @@ const users = [
   { id: 2, name: "Priyesha", role: "mentor" }
 ];
 
-app.get("/" , (req , res)=>{    
+app.get("/" , (req , res)=>{ 
     res.status(200).send({
         data : users
     })
