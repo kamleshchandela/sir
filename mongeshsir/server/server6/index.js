@@ -60,11 +60,14 @@ app.use(express.json())
 // ------------------------------------------------------------------------
 // mongodb connect karne ke liye 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://kamlesh:kamlesh123@cluster0.8pxa26e.mongodb.net/codinggita?appName=Cluster0')
+mongoose.connect('mongodb+srv://kamleshchandela:kamlesh1234@cluster0.8pxa26e.mongodb.net/codinggita?appName=Cluster0')
   .then(() => console.log('Connected!'));
 const userSchema = new mongoose.Schema({
-    name : String,
-    role : String
+    name : {type : String , required : true} ,
+    role : {type : String , required : true} ,
+    data : {type : Date , default : Date.now } ,
+    // check : {type : String , default : "okok"}
+
     
 })
 const users1 = mongoose.model("user" , userSchema)
