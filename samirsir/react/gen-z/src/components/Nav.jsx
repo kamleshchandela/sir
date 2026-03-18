@@ -1,55 +1,85 @@
-
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { FaArrowRightLong, FaBars, FaXmark } from 'react-icons/fa6'
-import img1 from '../assets/hero.jpg'
+import { Link, useLocation } from 'react-router-dom';
 
 export default function Nav() {
+    const [menuBar, setMenu] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+    const location = useLocation();
 
-    var [menuBar, setMenu] = useState(false);
+    // Close menu when route changes
+    useEffect(() => {
+        setMenu(false);
+    }, [location.pathname]);
+
+    // Handle scroll to add background blur/shadow dynamically
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 20) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
-
-        // Navigation Bar.....
-        <div className="w-full fixed top-0 z-78 border-2 backdrop-blur-2xl">
-
-            {/* Actual div which will contain the total three content used in navbar */}
-            <div className="flex items-center justify-between px-6 py-8 border-2 border-amber-600 sm:px-12 md:px-24 lg:40 ">
+        <div className={`w-full fixed top-0 z-[80] transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-xl border-b border-gray-100 shadow-sm py-4' : 'bg-transparent py-6'}`}>
+            <div className="flex items-center justify-between px-6 sm:px-12 md:px-24 lg:px-40 max-w-[1400px] mx-auto">
                 {/* Logo */}
-                <div>
-                    <p className="text-2xl font-bold">Gen-Z</p>
-                    <div className="w-4 h-4 rounded-full bg-amber-500"></div>
+                <Link to="/" className="flex items-center gap-2 group cursor-pointer">
+                    <div className="w-3 h-3 rounded-full bg-amber-500 animate-ping absolute"></div>
+                    <div className="w-3 h-3 rounded-full bg-amber-500"></div>
+                    <p className="text-2xl font-extrabold text-gray-900 tracking-tight group-hover:text-amber-500 transition-colors">Gen-Z</p>
+                </Link>
+
+                {/* Desktop Nav */}
+                <div className="hidden sm:flex items-center space-x-8 font-semibold text-gray-600">
+                    <Link to="/" className={`hover:text-amber-500 transition-colors ${location.pathname === '/' ? 'text-amber-500' : ''}`}>Home</Link>
+                    <Link to="/about" className={`hover:text-amber-500 transition-colors ${location.pathname === '/about' ? 'text-amber-500' : ''}`}>About</Link>
+                    <Link to="/carrer" className={`hover:text-amber-500 transition-colors ${location.pathname === '/carrer' ? 'text-amber-500' : ''}`}>Career</Link>
+                    <Link to="/support" className={`hover:text-amber-500 transition-colors ${location.pathname === '/support' ? 'text-amber-500' : ''}`}>Support</Link>
                 </div>
 
-                {/* Nav bar */}
-                <div className="hidden sm:flex items-center justify-between space-x-6 font-semibold">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#Career">Career</a>
-                </div>
-
-                {/* Button */}
+                {/* Desktop Button */}
                 <div className="hidden sm:block">
-                    <button className=" flex items-center gap-2 px-4 py-4 bg-amber-500 rounded-full">
+                    <button className="flex items-center gap-2 px-6 py-3 bg-gray-900 text-white font-bold rounded-full hover:bg-black hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
                         Contact us
                         <FaArrowRightLong />
                     </button>
                 </div>
 
-                {/* Mobile responsive bar */}
-                {
-                    menuBar ? <FaXmark onClick={() => { setMenu(!menuBar) }} className=" font-semibold text-3xl z-10 sm:hidden" /> :
-                        <FaBars onClick={() => { setMenu(!menuBar) }} className=" text-3xl font-semibold sm:hidden" />
-                }
+                {/* Mobile Menu Toggle */}
+                {menuBar ? (
+                    <FaXmark onClick={() => setMenu(false)} className="text-3xl text-gray-900 cursor-pointer sm:hidden z-[100] relative" />
+                ) : (
+                    <FaBars onClick={() => setMenu(true)} className="text-3xl text-gray-900 cursor-pointer sm:hidden relative z-[100]" />
+                )}
 
-                {/* mobile nav bar */}
-                {
-                    menuBar && <div className=" font-semibold text-2xl  flex flex-col items-center justify-center space-y-6 fixed top-0 right-0 h-screen w-40 bg-amber-400 sm:hidden">
-                        <a onClick={() => { setMenu(!menuBar) }}  href="#home">Home</a>
-                        <a onClick={() => { setMenu(!menuBar) }} href="#about">About</a>
-                        <a onClick={() => { setMenu(!menuBar) }} href="#Career">Career</a>
-                        <a onClick={() => { setMenu(!menuBar) }} href="#Career">Contact us</a>
+                {/* Mobile Navigation Sidebar */}
+                <div className={`fixed top-0 right-0 h-screen w-full sm:hidden bg-amber-400 z-[90] transform transition-transform duration-300 ease-in-out ${menuBar ? 'translate-x-0' : 'translate-x-full'}`}>
+                    <div className="flex flex-col items-center justify-center space-y-8 h-full text-2xl font-bold text-gray-900">
+                        <Link to="/" className="hover:text-white transition-colors" onClick={() => setMenu(false)}>Home</Link>
+                        <Link to="/about" className="hover:text-white transition-colors" onClick={() => setMenu(false)}>About</Link>
+                        <Link to="/carrer" className="hover:text-white transition-colors" onClick={() => setMenu(false)}>Career</Link>
+                        <Link to="/support" className="hover:text-white transition-colors" onClick={() => setMenu(false)}>Support</Link>
+                        
+                        <button className="flex items-center gap-2 px-8 py-4 bg-gray-900 text-white rounded-full mt-4 hover:bg-black transition-colors" onClick={() => setMenu(false)}>
+                            Contact us
+                            <FaArrowRightLong />
+                        </button>
                     </div>
-
-                }
+                </div>
+                
+                {/* Backdrop for mobile menu */}
+                {menuBar && (
+                    <div 
+                        className="fixed inset-0 bg-black/20 backdrop-blur-sm z-[80] sm:hidden" 
+                        onClick={() => setMenu(false)}
+                    ></div>
+                )}
             </div>
         </div>
     )
