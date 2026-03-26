@@ -9,6 +9,7 @@ Write your code in this editor and press "Run" button to compile and execute it.
 #include <iostream>
 #include<fstream>
 #include <vector>
+#include <map>
 using namespace std ;
 
 int main()
@@ -31,6 +32,9 @@ int main()
     // ok.insert(ok.begin() + 1 , 4) ;
     // ok.insert(ok.begin() + 2 , 4) ;
     ok.insert(ok.begin() + 2 , 14) ;
+
+    map<char , int> ok1 ;
+    cout << "ooooooo" << ok1['o'] << endl ;
     
     for(int x : ok){
         cout << x << endl ;
