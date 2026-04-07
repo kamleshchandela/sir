@@ -41,6 +41,7 @@ export default function Nav() {
                     <Link to="/about" className={`hover:text-amber-500 transition-colors ${location.pathname === '/about' ? 'text-amber-500' : ''}`}>About</Link>
                     <Link to="/carrer" className={`hover:text-amber-500 transition-colors ${location.pathname === '/carrer' ? 'text-amber-500' : ''}`}>Career</Link>
                     <Link to="/support" className={`hover:text-amber-500 transition-colors ${location.pathname === '/support' ? 'text-amber-500' : ''}`}>Support</Link>
+                    <Link to="/contact" className={`hover:text-amber-500 transition-colors ${location.pathname === '/contact' ? 'text-amber-500' : ''}`}>Contact</Link>
                 </div>
 
                 {/* Desktop Button */}
@@ -65,6 +66,7 @@ export default function Nav() {
                         <Link to="/about" className="hover:text-white transition-colors" onClick={() => setMenu(false)}>About</Link>
                         <Link to="/carrer" className="hover:text-white transition-colors" onClick={() => setMenu(false)}>Career</Link>
                         <Link to="/support" className="hover:text-white transition-colors" onClick={() => setMenu(false)}>Support</Link>
+                        <Link to="/contact" className="hover:text-white transition-colors" onClick={() => setMenu(false)}>Contact</Link>
                         
                         <button className="flex items-center gap-2 px-8 py-4 bg-gray-900 text-white rounded-full mt-4 hover:bg-black transition-colors" onClick={() => setMenu(false)}>
                             Contact us
