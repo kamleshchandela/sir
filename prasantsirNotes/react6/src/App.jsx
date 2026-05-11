@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Props from './components/Props'
+import Input from './components/Input'
 import './App.css'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
   return (
     <>
       <Props name={useName}></Props>
+      <Input />
     </>
   )
 }
